@@ -14,8 +14,7 @@ Multithreaded, cross-platform, reliable
 <div align="center">
 
 Graphical interface translated in:<br>
-🇬🇧&nbsp;&nbsp;🇩🇪&nbsp;&nbsp;🇪🇦&nbsp;&nbsp;🇫🇷&nbsp;&nbsp;🇮🇹&nbsp;&nbsp;🇵🇱&nbsp;&nbsp;🇷🇴&nbsp;&nbsp;🇺🇦&nbsp;&nbsp;🇨🇳<br>
-[Would you like to add support for your native language?](https://github.com/GyulyVGC/sniffnet/issues/60)
+🇬🇧&nbsp;&nbsp;🇩🇪&nbsp;&nbsp;🇪🇦&nbsp;&nbsp;🇫🇷&nbsp;&nbsp;🇮🇹&nbsp;&nbsp;🇰🇷&nbsp;&nbsp;🇵🇱&nbsp;&nbsp;🇵🇹&nbsp;&nbsp;🇷🇴&nbsp;&nbsp;🇷🇺&nbsp;&nbsp;🇹🇷&nbsp;&nbsp;🇺🇦&nbsp;&nbsp;🇨🇳<br>
 
 </div>
 
@@ -51,9 +50,9 @@ You can install Sniffnet in one of the following ways:
   You can install Sniffnet through the installers available in the [latest release](https://github.com/GyulyVGC/sniffnet/releases). <br>
   Choose from a Windows installer, a macOS disk image, or a DEB package (depending on your operating system). <br>
   Here for your convenience you can find the direct link to the downloads:
-  - [Windows](https://github.com/GyulyVGC/sniffnet/releases/download/v1.1.3/Sniffnet_Windows.msi) (8.4 MB)
-  - [macOS](https://github.com/GyulyVGC/sniffnet/releases/download/v1.1.3/Sniffnet_MacOS.dmg) (6.9 MB)
-  - [Linux (.deb)](https://github.com/GyulyVGC/sniffnet/releases/download/v1.1.3/Sniffnet_Linux.deb) (5.3 MB)
+  - [Windows](https://github.com/GyulyVGC/sniffnet/releases/download/v1.1.4/Sniffnet_Windows.msi) (8.8 MB)
+  - [macOS](https://github.com/GyulyVGC/sniffnet/releases/download/v1.1.4/Sniffnet_MacOS.dmg) (7.3 MB)
+  - [Linux (.deb)](https://github.com/GyulyVGC/sniffnet/releases/download/v1.1.4/Sniffnet_Linux.deb) (5.3 MB)
 
     
 </details>
@@ -72,7 +71,6 @@ cargo install sniffnet
 
 </details>
 
-<!---
 
 <details>
 
@@ -86,7 +84,6 @@ brew install sniffnet
     
 </details>
 
---->
 
 ## Required dependencies
 
@@ -301,6 +298,13 @@ Some Linux systems also need `libfontconfig`, see issue [#18](https://github.com
 If you have problems after having installed Sniffnet through the provided installers,
 it could be due to your OS not being compatible with the pre-built binaries I generated for you. <br>
 Reach me out, and I'll try to generate an installer for your specific operating system.
+
+### Rendering problems
+
+In some cases, especially if you are running on an old architecture, the `wgpu` default renderer used by [iced](https://github.com/iced-rs/iced)
+may cause some problems that could prevent you from running Sniffnet. <br>
+In this case, you can try building the application from the [`glow-renderer`](https://github.com/GyulyVGC/sniffnet/tree/glow-renderer) 
+branch, which uses the `glow` renderer.
 
 ### ***In any case don't hesitate to [open an issue](https://github.com/GyulyVGC/sniffnet/issues), and I will do my best to help you!***
 
