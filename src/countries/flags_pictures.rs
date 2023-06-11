@@ -1,5 +1,7 @@
-pub const FLAGS_WIDTH_SMALL: f32 = 20.0;
-pub const FLAGS_WIDTH_BIG: f32 = 37.5;
+use crate::gui::styles::style_constants::SCALE_FACTOR;
+
+pub const FLAGS_WIDTH_SMALL: f32 = 20.0 * SCALE_FACTOR;
+pub const FLAGS_WIDTH_BIG: f32 = 37.5 * SCALE_FACTOR;
 
 pub const AD: &[u8] = include_bytes!("../../resources/countries_flags/4x3/ad.svg");
 pub const AE: &[u8] = include_bytes!("../../resources/countries_flags/4x3/ae.svg");

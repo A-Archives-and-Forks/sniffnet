@@ -10,7 +10,9 @@ use iced_native::widget::{button, horizontal_space, vertical_space, Rule};
 
 use crate::gui::components::tab::get_pages_tabs;
 use crate::gui::components::types::my_modal::MyModal;
-use crate::gui::styles::style_constants::{get_font, FONT_SIZE_TITLE, ICONS, SARASA_MONO_SC_BOLD};
+use crate::gui::styles::style_constants::{
+    get_font, FONT_SIZE_TITLE, ICONS, SARASA_MONO_SC_BOLD, SCALE_FACTOR,
+};
 use crate::gui::styles::types::element_type::ElementType;
 use crate::gui::styles::types::style_tuple::StyleTuple;
 use crate::gui::types::message::Message;
@@ -215,7 +217,7 @@ fn lazy_report(sniffer: &Sniffer) -> Row<'static, Message> {
         .push(
             Container::new(col_report)
                 .padding([10, 7, 7, 7])
-                .width(Length::Fixed(1042.0))
+                .width(Length::Fixed(1042.0 * SCALE_FACTOR))
                 .style(<StyleTuple as Into<iced::theme::Container>>::into(
                     StyleTuple(sniffer.style, ElementType::BorderedRound),
                 )),

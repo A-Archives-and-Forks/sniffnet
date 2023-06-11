@@ -200,10 +200,11 @@ pub const DEEP_SEA: &[u8] = include_bytes!("../../../resources/palettes/DeepSea.
 pub const MON_AMOUR: &[u8] = include_bytes!("../../../resources/palettes/MonAmour.svg");
 
 // font sizes
-pub const FONT_SIZE_FOOTER: f32 = 18.0;
-pub const FONT_SIZE_BODY: f32 = 21.0;
-pub const FONT_SIZE_SUBTITLE: f32 = 23.0;
-pub const FONT_SIZE_TITLE: f32 = 25.0;
+pub const SCALE_FACTOR: f32 = 0.67;
+pub const FONT_SIZE_FOOTER: f32 = 18.0 * SCALE_FACTOR;
+pub const FONT_SIZE_BODY: f32 = 21.0 * SCALE_FACTOR;
+pub const FONT_SIZE_SUBTITLE: f32 = 23.0 * SCALE_FACTOR;
+pub const FONT_SIZE_TITLE: f32 = 25.0 * SCALE_FACTOR;
 
 // border styles
 pub const BORDER_WIDTH: f32 = 2.0;
